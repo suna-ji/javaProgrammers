@@ -1,6 +1,6 @@
 package level1;
 
-public class lesson_12903 {
+public class Lesson12903 {
     public static String solution(String s) {
         String answer = "";
         while(true) {
