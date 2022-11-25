@@ -6,7 +6,7 @@ package level2;
 // 아래: 이전 알파벳
 // 왼:  커서를 왼쪽으로 이동
 // 오: 커서를 오른쪽으로 이동
-// JAZ : 9번 조작 A ->(9번위로) J -> (커서 왼)JA -> ㅋ
+// JAZ : 9번 조작 A ->(9번위로) J -> (커서 왼)JA ->
 public class Sol42860 {
     public int solution(String name) {
         int answer = 0;
