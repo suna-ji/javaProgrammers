@@ -17,7 +17,7 @@ public class Sol43236 {
         while(min <= max) {
             int mid = (min + max) / 2;
             if (check(rocks, mid, distance, n)) {
-                min = mid + 1; // 간격 중 최솟값을 더 키울 수 있다.
+                min = mid + 1; // 간격 중 최솟값을 더 키울 수 있다. (간격의 최솟값 중 최대값을 찾아야 하므로 최대한 키워야함)
                 answer = mid;
             } else {
                 max = mid - 1;
@@ -27,6 +27,7 @@ public class Sol43236 {
     }
     // 바위를 제거해보자.
     // 제거한 바위 개수가 n개를 초과하면 false를 리턴한다.
+    // mid (간격의 최솟값)보다 바위사이의 간격이 작다면 바위를 제거해야 한다. (mid가 최솟값이라고 가정했기 때문)
     // 바위를 제거한 후 바위 사이의 간격이 mid를 초과하게 된다면 해당 바위는 제거하지 않는다.
     private boolean check(int[] rocks, int mid, int distance, int n) {
         int start = 0;
